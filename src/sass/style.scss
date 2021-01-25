@@ -1,6 +1,7 @@
-@import 'base/_variables.scss';
-@import 'blocks/_promo.scss';
-@import 'blocks/header.scss';
+@import 'base/variables';
+@import 'blocks/buttons';
+@import 'blocks/header';
+@import 'blocks/promo';
 
 * {
 	font-family: 'Museo Sans Cyrl', sans-serif;
