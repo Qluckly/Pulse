@@ -23,7 +23,8 @@ gulp.task('styles', function() {
 				prefix: "",
 				suffix: ".min",
 			}))
-			.pipe(autoprefixer()) //[autoprefixer()] будет брать свои настройки из файла package.json 
+			.pipe(autoprefixer()) //[autoprefixer()] будет брать свои настройки из файла package.json
+								 //к объекту [browsersList] 
 			.pipe(cleanCSS({compatibility: 'ie8'}))
 			.pipe(gulp.dest("src/css"))
 			.pipe(browserSync.stream()); //Перезапуск browserSync		
