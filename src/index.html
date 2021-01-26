@@ -4,9 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="css/font.css">
-	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -113,7 +110,7 @@
             и мы перезвоним вам в течении 10 минут
  		</div>
 
- 		<form id="consultation-form" class="feed-form" action="#" method="">
+ 		<form id="consultation-form" class="feed-form" action="#">
  		    <input name="name" type="text" placeholder="Ваше имя" required>
  		  	<input name="phone" placeholder="Ваш телефон" required>
  		  	<input name="email" type="email" placeholder="Ваш E-mail" required>
@@ -123,7 +120,7 @@
  </section>
 
 
- <section class="carousel">
+ <div class="carousel">
  	<div class="container">
  	  <div class="carousel__inner">
  		<div><img src="img/slide_1.jpg" alt="slide"></div>
@@ -131,7 +128,7 @@
  		<div><img src="img/slide_3.jpg" alt="slide"></div>
  	  </div>
  	</div>
- </section>
+ </div>
 
 
   <section class="catalog">
@@ -334,7 +331,7 @@
  <section class="feed">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="feed__item">
+            <div class="feed__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/feed_1.png" alt="Ирина Иванченко" class="feed__img">
                 <div class="feed__text">
                     <div class="feed__subtitle">Ирина Иванченко</div>
@@ -348,7 +345,7 @@
                     </div>
                 </div>
             </div>
-            <div class="feed__item">
+            <div class="feed__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/feed_2.png" alt="Иван Сёмочкин" class="feed__img">
                 <div class="feed__text">
                     <div class="feed__subtitle">Иван Сёмочкин</div>
@@ -360,7 +357,7 @@
                     </div>
                 </div>
             </div>
-            <div class="feed__item">
+            <div class="feed__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/feed_3.png" alt="Юлия Дашкина" class="feed__img">
                 <div class="feed__text">
                     <div class="feed__subtitle">Юлия Дашкина</div>
@@ -379,7 +376,7 @@
     
     <footer class="footer">
 
-    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.4022538815466!2d76.95475601548449!3d43.24299067913758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836efa730708f9%3A0x7ed8376d01fc75ad!2z0L_RgNC-0YHQv9C10LrRgiDQlNC-0YHRgtGL0LogJiDQv9GA0L7RgdC_LiDQkNCx0LDRjywg0JDQu9C80LDRgtGLIDA1MDAwMA!5e0!3m2!1sru!2skz!4v1611630726496!5m2!1sru!2skz" width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.4022538815466!2d76.95475601548449!3d43.24299067913758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836efa730708f9%3A0x7ed8376d01fc75ad!2z0L_RgNC-0YHQv9C10LrRgiDQlNC-0YHRgtGL0LogJiDQv9GA0L7RgdC_LiDQkNCx0LDRjywg0JDQu9C80LDRgtGLIDA1MDAwMA!5e0!3m2!1sru!2skz!4v1611630726496!5m2!1sru!2skz" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 
     	<div class="footer__info">
@@ -400,7 +397,7 @@
     	   <div class="modal__subtitle">Просто заполните форму заявки</div>
     	   <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
 
-    	   <form class="feed-form feed-form_mt25" action="#" method="">
+    	   <form class="feed-form feed-form_mt25" action="#">
  		    <input name="name" type="text" placeholder="Ваше имя" required>
  		  	<input name="phone" placeholder="Ваш телефон" required>
  		  	<input name="email" type="email" placeholder="Ваш E-mail" required>
@@ -415,7 +412,7 @@
     	   <div class="modal__subtitle">Ваш заказ:</div>
     	   <div class="modal__descr">Пульсометр Polar FT1</div>
 
-    	   <form class="feed-form feed-form_mt25" action="#" method="">
+    	   <form class="feed-form feed-form_mt25" action="#">
  		    <input name="name" type="text" placeholder="Ваше имя" required>
  		  	<input name="phone" placeholder="Ваш телефон" required>
  		  	<input name="email" type="email" placeholder="Ваш E-mail" required>
@@ -439,11 +436,12 @@
   </a>  
     
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
